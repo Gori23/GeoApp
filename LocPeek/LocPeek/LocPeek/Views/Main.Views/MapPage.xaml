@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="LocPeek.Views.Main.Views.MapPage"
+             xmlns:local="clr-namespace:LocPeek.Models;clr-namespace:CustomRenderer;assembly=CustomRenderer">
+
+
+    <Grid>
+        <StackLayout Spacing="0" Padding="0" BackgroundColor="Wheat">
+            <StackLayout>
+                <Button x:Name="GetGps" Text="PObier Gpsa" Clicked="GetGPSClicked" HorizontalOptions="FillAndExpand"   />
+            </StackLayout>
+            <StackLayout>
+                <Button Grid.Column="1" x:Name="GPSTracker" Text="Śledź gps" Clicked="TrackGPSClicked" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <StackLayout>
+                <Button Grid.Column="2" x:Name="GPSStopTracker" Text="Zastopuj śledzenie" Clicked="StopTrackGPsClicked" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <StackLayout>
+                <Label x:Name="GpsLabel" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+            </StackLayout>
+            <StackLayout>
+                <Label x:Name="RadiusLabel" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+            </StackLayout>
+            <StackLayout>
+                <maps:Map  WidthRequest="400" HeightRequest="400"
+                   x:Name="MyMap"
+                   IsShowingUser="True"
+                   MapType="Street"
+                     >
+                </maps:Map>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

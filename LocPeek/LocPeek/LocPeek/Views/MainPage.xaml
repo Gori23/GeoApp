@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LocPeek.Views.MainPage">
+    <ScrollView BackgroundColor="Black">
+        <StackLayout Margin="5" Spacing="50"  >
+            <Grid RowSpacing="0" ColumnSpacing="0"   >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <BoxView  Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="3" BackgroundColor="Black"/>
+                <Image Source="map.jpg" Aspect="AspectFit"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"   />
+                <Label Text="Map" TextColor="Black" FontSize="Large"  FontAttributes="Italic" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="White" 
+                         Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Button x:Name="BtnMap" Clicked="MapClicked"  Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="3" BackgroundColor="Transparent" BorderWidth="10" BorderColor="Black"  HorizontalOptions="Fill"  />
+            </Grid>
+            <Grid RowSpacing="0" ColumnSpacing="0"   >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <BoxView  Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="3" BackgroundColor="Black"/>
+                <Image Source="friends.jpg" Aspect="AspectFit"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"   />
+                <Label Text="Friends" TextColor="Black" FontSize="Large"  FontAttributes="Italic" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="White" 
+                         Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Button x:Name="BtnFriends" Clicked="FriendsClicked"  Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="3"   BackgroundColor="Transparent" BorderWidth="10" BorderColor="Black"  />
+            </Grid>
+
+            <Grid RowSpacing="0" ColumnSpacing="0"   >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <BoxView  Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="3" BackgroundColor="Black"/>
+                <Image Source="messages.png" Aspect="AspectFit"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"    />
+                <Label Text="Messages" TextColor="Black" FontSize="Large"  FontAttributes="Italic" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="White" 
+                         Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"/>
+                <Button x:Name="BtnMessages" Clicked="MessagesClicked"  Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="3"   BackgroundColor="Transparent" BorderWidth="10" BorderColor="Black"  />
+            </Grid>
+
+            <Grid RowSpacing="0" ColumnSpacing="0"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <BoxView  Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="3" BackgroundColor="Black"/>
+                <Image Source="options.jpg" Aspect="AspectFit"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"    />
+                <Label Text="Options" TextColor="Black" FontSize="Large"  FontAttributes="Italic" HorizontalOptions="FillAndExpand" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="White" 
+                         Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" />
+                <Button x:Name="Options" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="3"   BackgroundColor="Transparent" BorderWidth="10" BorderColor="Black" Clicked="OptionClicked" />
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

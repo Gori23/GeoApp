@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LocPeek.Views.LoginPage">
+    <StackLayout x:Name="MasterLayout">
+        <StackLayout x:Name="LogoStack" VerticalOptions="FillAndExpand">
+            <Image x:Name="LoginIcon" Source="LoginIcon.jpg" Margin="0,80,0,0"/>
+        </StackLayout>
+        
+        <StackLayout x:Name="LoginEntriesStack" VerticalOptions="StartAndExpand" BackgroundColor="Black" >
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>40,0,40,0
+                    </OnIdiom.Phone>
+                    <OnIdiom.Tablet>140,150,140,0
+                    </OnIdiom.Tablet>
+                </OnIdiom>
+            </StackLayout.Padding>
+
+            <Label x:Name="Lbl_Username" Text="Username" TextColor="White" FontSize="Large" />
+            <Entry x:Name="Entry_Username" Placeholder="Username" TextColor="White" PlaceholderColor="Gray"/>
+            <Label x:Name="Lbl_Password" Text="Password" TextColor="White" FontSize="Large"/>
+            <Entry x:Name="Entry_Password" Placeholder="Password" IsPassword="True" TextColor="White" PlaceholderColor="Gray"/>
+            <Button x:Name="Btn_Signin" Text="Sign in" Clicked="SignInProcedure"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
