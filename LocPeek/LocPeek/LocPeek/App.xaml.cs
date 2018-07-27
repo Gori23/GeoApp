@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LocPeek.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,8 +14,9 @@ namespace LocPeek
 		{
 			InitializeComponent();
 
-			MainPage = new LocPeek.MainPage();
-		}
+            //MainPage = new LoginPage(); // Optional
+            MainPage = new LoginPage();
+        }
 
 		protected override void OnStart ()
 		{

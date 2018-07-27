@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocPeek.iOS", "LocPeek\LocP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocPeek.UWP", "LocPeek\LocPeek.UWP\LocPeek.UWP.csproj", "{EA9B6149-246E-4A38-81F8-7591491AA919}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocPeek", "LocPeek\LocPeek\LocPeek.csproj", "{A09851B6-E299-4037-A52F-1C37F6C062DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocPeek", "LocPeek\LocPeek\LocPeek.csproj", "{A09851B6-E299-4037-A52F-1C37F6C062DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
